@@ -1,4 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lovie Brand Sticky Note</title>
+    <link rel="stylesheet" th:href="@{/css/note.css}">
+</head>
+<body>
+<div>
 <div class="sticky">
-    <h1>Sticky Note</h1>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    <div>
+
+    <h1 th:text="${note.getTitle()}"></h1>
+    <p th:text="${note.getContent()}"></p>
+    </div>
+</div>
+</body>
+</html>

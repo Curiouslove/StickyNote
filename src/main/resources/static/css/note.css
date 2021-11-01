@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+body{
+    font-family: 'Permanent Marker', cursive;
+}
 
 .sticky {
     background: linear-gradient(#FEFCAF, #FFFEDA);

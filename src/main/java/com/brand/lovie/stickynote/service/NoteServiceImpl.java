@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -71,5 +72,10 @@ public class NoteServiceImpl implements NoteService{
         }else{
             throw new NoteException("Note not found");
         }
+    }
+
+    @Override
+    public List<Note> findAllNotes() {
+        return noteRepository.findAll();
     }
 }
